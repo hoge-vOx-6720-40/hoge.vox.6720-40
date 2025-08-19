@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロサンゼルス満喫旅行スケジュール</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-10">
+        <!-- ヘッダーセクション -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-blue-700 tracking-tight">⚾️ & 🏰 ロサンゼルス満喫旅行</h1>
+            <p class="text-lg text-gray-500 mt-2">旅行の全日程</p>
+        </header>
+
+        <!-- 旅行概要セクション -->
+        <section class="mb-10 bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-800">旅行概要</h2>
+            <div class="space-y-3">
+                <p><strong>🗓️ 旅行期間:</strong> 2025年8月26日 ～ 2025年9月1日</p>
+                <p><strong>📍 目的地:</strong> アメリカ合衆国 カリフォルニア州 ロサンゼルス & アナハイム</p>
+                <div>
+                    <p><strong>🏨 宿泊先:</strong></p>
+                    <ul class="list-disc list-inside ml-4 mt-1 text-gray-700">
+                        <li><strong>8/26-29:</strong> <a href="https://www.google.com/maps/place/Sheraton+Grand+Los+Angeles" target="_blank">シェラトン・グランド・ロサンゼルス</a></li>
+                        <li><strong>8/29-31:</strong> <a href="https://www.google.com/maps/place/Disneyland+Hotel" target="_blank">ディズニーランド・ホテル</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 全体スケジュールセクション -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-gray-200 pb-2">全体のスケジュール</h2>
+            <div class="overflow-x-auto rounded-lg shadow">
+                <table class="w-full text-sm text-left">
+                    <thead class="bg-gray-700 text-white uppercase tracking-wider">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">日付</th>
+                            <th scope="col" class="px-6 py-3">曜日</th>
+                            <th scope="col" class="px-6 py-3">主な予定</th>
+                            <th scope="col" class="px-6 py-3">宿泊地</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">8月26日</td>
+                            <td class="px-6 py-4">火</td>
+                            <td class="px-6 py-4">✈️ 到着 & ドジャース試合観戦 ①</td>
+                            <td class="px-6 py-4">ロサンゼルス</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-6 py-4 font-medium">8月27日</td>
+                            <td class="px-6 py-4">水</td>
+                            <td class="px-6 py-4">☀️ 自由時間 & ドジャース試合観戦 ②</td>
+                            <td class="px-6 py-4">ロサンゼルス</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">8月28日</td>
+                            <td class="px-6 py-4">木</td>
+                            <td class="px-6 py-4">🏙️ 観光 / ショッピング</td>
+                            <td class="px-6 py-4">ロサンゼルス</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-6 py-4 font-medium">8月29日</td>
+                            <td class="px-6 py-4">金</td>
+                            <td class="px-6 py-4">🏨 ホテル移動 & ディズニーランド ①</td>
+                            <td class="px-6 py-4 font-semibold text-purple-600">アナハイム</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">8月30日</td>
+                            <td class="px-6 py-4">土</td>
+                            <td class="px-6 py-4">🏰 終日ディズニーランド ②</td>
+                            <td class="px-6 py-4 font-semibold text-purple-600">アナハイム</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-6 py-4 font-medium">8月31日</td>
+                            <td class="px-6 py-4">日</td>
+                            <td class="px-6 py-4">✈️ 日本へ出発</td>
+                            <td class="px-6 py-4">機内泊</td>
+                        </tr>
+                         <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">9月1日</td>
+                            <td class="px-6 py-4">月</td>
+                            <td class="px-6 py-4">🛬 関西国際空港 到着</td>
+                            <td class="px-6 py-4">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 詳細スケジュールセクション -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6 border-b-2 border-gray-200 pb-2">詳細スケジュール</h2>
+            <div class="space-y-8">
+                <!-- 1日目 -->
+                <div class="p-5 border rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 text-gray-700">【1日目】8月26日 (火) | 到着＆試合観戦</h3>
+                    <ul class="space-y-3 border-l-2 border-blue-300 pl-4">
+                        <li><strong>17:55:</strong> 🛫 <a href="https://www.google.com/maps/place/Kansai+International+Airport+(KIX)" target="_blank">関西国際空港 (KIX)</a> 出発 - 日本時間</li>
+                        <li><strong>12:35:</strong> 🛬 <a href="https://www.google.com/maps/place/Los+Angeles+International+Airport+(LAX)" target="_blank">ロサンゼルス国際空港 (LAX)</a> 到着 - 現地時間</li>
+                        <li><strong>14:00頃:</strong> 🏨 ホテルへ移動 <span class="text-sm text-gray-500">(Uber目安: 45-75分)</span></li>
+                        <li><strong>16:00:</strong> 🏨 <a href="https://www.google.com/maps/place/Sheraton+Grand+Los+Angeles" target="_blank">シェラトン・グランド・ロサンゼルス</a> チェックイン</li>
+                        <li><strong>17:30頃:</strong> ⚾️ <a href="https://www.google.com/maps/place/Dodger+Stadium" target="_blank">ドジャースタジアム</a>へ移動 <span class="text-sm text-gray-500">(Uber目安: 45-60分)</span></li>
+                        <li><strong>19:10:</strong> ⚾️ 試合開始</li>
+                        <li><strong>22:00:</strong> � ホテルへ戻る</li>
+                    </ul>
+                </div>
+
+                <!-- 2日目 -->
+                <div class="p-5 border rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 text-gray-700">【2日目】8月27日 (水) | LA観光＆試合観戦</h3>
+                    <ul class="space-y-3 border-l-2 border-blue-300 pl-4">
+                         <li><strong>10:00:</strong> 🛍️ <a href="https://www.google.com/maps/place/The+Grove" target="_blank">ザ・グローブ</a>に到着 <span class="text-sm text-gray-500">(Uber目安: 30-45分) 午後までショッピングや食事を楽しむ</span></li>
+                         <li><strong>14:00:</strong> 🏨 ホテルへ戻る <span class="text-sm text-gray-500">(Uber目安: 30-45分)</span></li>
+                         <li><strong>15:00:</strong> 🏟️ <a href="https://www.google.com/maps/place/Dodger+Stadium" target="_blank">ドジャースタジアム</a>へ移動・到着 <span class="text-sm text-gray-500">(Uber目安: 20-30分)</span></li>
+                         <li><strong>17:40:</strong> ⚾️ 試合開始</li>
+                         <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
+                    </ul>
+                </div>
+
+                <!-- 3日目 -->
+                <div class="p-5 border rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 text-gray-700">【3日目】8月28日 (木) | サンタモニカ散策</h3>
+                    <ul class="space-y-3 border-l-2 border-blue-300 pl-4">
+                        <li><strong>10:30:</strong> 🏖️ <a href="https://www.google.com/maps/place/Santa+Monica+Pier" target="_blank">サンタモニカピア</a>に到着 <span class="text-sm text-gray-500">(Uber目安: 45-60分) ビーチやショッピングを楽しむ</span></li>
+                        <li><strong>終日:</strong> ☀️ 自由時間 <span class="text-sm text-gray-500">(周辺のベニスビーチやサードストリート・プロムナードもおすすめです)</span></li>
+                        <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
+                    </ul>
+                </div>
+
+                <!-- 4日目 -->
+                <div class="p-5 border rounded-lg shadow-sm bg-purple-50 border-purple-200">
+                    <h3 class="text-xl font-bold mb-3 text-purple-800">【4日目】8月29日 (金) | いざ、ディズニーランドへ！</h3>
+                    <ul class="space-y-3 border-l-2 border-purple-300 pl-4">
+                        <li><strong>8:00:</strong> 🏨 シェラトンをチェックアウトしアナハイムへ移動 <span class="text-sm text-gray-500">(Uber目安: 60-90分以上、朝の渋滞に注意)</span></li>
+                        <li><strong>10:00:</strong> 🏰 <a href="https://www.google.com/maps/place/Disneyland+Resort" target="_blank">ディズニーランド・リゾート</a>到着 <span class="text-sm text-gray-500">(先にホテルへ荷物を預けるのがおすすめ)</span></li>
+                        <li><strong>18:00:</strong> 🏨 <a href="https://www.google.com/maps/place/Disneyland+Hotel" target="_blank">ディズニーランド・ホテル</a> チェックイン</li>
+                    </ul>
+                </div>
+
+                <!-- 5日目 -->
+                <div class="p-5 border rounded-lg shadow-sm bg-purple-50 border-purple-200">
+                    <h3 class="text-xl font-bold mb-3 text-purple-800">【5日目】8月30日 (土) | 魔法の国で一日中</h3>
+                    <ul class="space-y-3 border-l-2 border-purple-300 pl-4">
+                        <li><strong>9:00:</strong> 🏰 終日ディズニーパークを満喫！</li>
+                        <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
+                    </ul>
+                </div>
+
+                <!-- 6日目 -->
+                <div class="p-5 border rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 text-gray-700">【6日目】8月31日 (日) | 出国</h3>
+                    <ul class="space-y-3 border-l-2 border-blue-300 pl-4">
+                        <li><strong>10:00:</strong> 🏨 ディズニーランド・ホテルをチェックアウト</li>
+                        <li><strong>~11:30:</strong> 🚕 <a href="https://www.google.com/maps/place/Los+Angeles+International+Airport+(LAX)" target="_blank">ロサンゼルス国際空港 (LAX)</a> へ移動 <span class="text-sm text-gray-500">(Uber目安: 50-70分)</span></li>
+                        <li><strong>15:00:</strong> 🛫 LAXから出発</li>
+                    </ul>
+                </div>
+
+                <!-- 7日目 -->
+                <div class="p-5 border rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 text-gray-700">【7日目】9月1日 (月) | 帰国</h3>
+                    <ul class="space-y-3 border-l-2 border-blue-300 pl-4">
+                        <li><strong>18:45:</strong> 🛬 <a href="https://www.google.com/maps/place/Kansai+International+Airport+(KIX)" target="_blank">関西国際空港 (KIX)</a> 到着 - 日本時間</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+�
