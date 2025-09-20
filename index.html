@@ -3,178 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旅行スケジュール</title>
+    <title>9月21日 香川旅行プラン</title>
+    <!-- Tailwind CSSを読み込みます -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Google FontsからInterフォントを読み込みます -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* 日本語フォントとInterフォントを適用します */
         body {
             font-family: 'Inter', 'Noto Sans JP', sans-serif;
         }
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #1d4ed8;
-        }
-        .tab-button.active {
-            border-color: #2563eb;
-            color: #2563eb;
-            background-color: #eff6ff;
-        }
-        .tab-panel {
-            display: none;
-        }
-        .tab-panel.active {
-            display: block;
-        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 p-4 sm:p-6 md:p-8">
+<body class="bg-gray-100">
 
-    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-10">
-        <!-- ヘッダーセクション -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-blue-700 tracking-tight">⚾️ & 🏰 ロサンゼルス満喫旅行</h1>
-            <p class="text-lg text-gray-500 mt-2">旅行の全日程</p>
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- ヘッダー部分 -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">9月21日 香川旅行プラン</h1>
+            <p class="text-gray-500 mt-2">思い出に残る素敵な一日を！</p>
         </header>
 
-        <!-- タブナビゲーション -->
-        <div class="mb-8 border-b border-gray-200">
-            <nav class="flex flex-wrap -mb-px" id="tab-nav">
-                <button class="tab-button active text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day1">1日目 (8/26)</button>
-                <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day2">2日目 (8/27)</button>
-                <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day3">3日目 (8/28)</button>
-                <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day4">4日目 (8/29)</button>
-                <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day5">5日目 (8/30)</button>
-                <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium" data-target="day6">6-7日目</button>
-                <button class="tab-button text-green-600 py-4 px-6 block hover:text-green-800 focus:outline-none border-b-2 font-medium" data-target="restaurants">🍴 食事ガイド</button>
-            </nav>
-        </div>
+        <!-- タイムライン形式のスケジュール -->
+        <div class="relative wrap overflow-hidden p-4 md:p-10 h-full">
+            <!-- 中央の縦線 -->
+            <div class="absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
 
-        <!-- タブコンテンツ -->
-        <div id="tab-content">
-            <!-- 1日目 -->
-            <div id="day1" class="tab-panel active">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【1日目】8月26日 (火) | 到着＆試合観戦</h3>
-                <ul class="space-y-3 border-l-2 border-blue-300 pl-4 mb-8">
-                    <li><strong>17:55:</strong> 🛫 <a href="https://www.google.com/maps/search/?api=1&query=Kansai+International+Airport" target="_blank">関西国際空港 (KIX)</a> 出発</li>
-                    <li><strong>12:35:</strong> 🛬 <a href="https://www.google.com/maps/search/?api=1&query=Los+Angeles+International+Airport" target="_blank">ロサンゼルス国際空港 (LAX)</a> 到着</li>
-                    <li><strong>14:00頃:</strong> 🏨 ホテルへ移動 <span class="text-sm text-gray-500">(Uber目安: 45-75分)</span></li>
-                    <li><strong>16:00:</strong> 🏨 <a href="https://www.google.com/maps/search/?api=1&query=Sheraton+Grand+Los+Angeles" target="_blank">シェラトン・グランド・ロサンゼルス</a> チェックイン</li>
-                    <li><strong>17:30頃:</strong> ⚾️ <a href="https://www.google.com/maps/search/?api=1&query=Dodger+Stadium" target="_blank">ドジャースタジアム</a>へ移動 <span class="text-sm text-gray-500">(Uber目安: 45-60分)</span></li>
-                    <li><strong>19:10:</strong> ⚾️ 試合開始</li>
-                    <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
-                </ul>
+            <!-- スケジュール項目 1: 出発 -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-12 h-12 rounded-full">
+                     <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">8:00</p>
+                    <h3 class="font-bold text-gray-800 text-xl">出発</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">大阪神崎川駅の自宅から車で出発します。</p>
+                </div>
             </div>
 
-            <!-- 2日目 -->
-            <div id="day2" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【2日目】8月27日 (水) | LA観光＆試合観戦</h3>
-                <ul class="space-y-3 border-l-2 border-blue-300 pl-4 mb-8">
-                     <li><strong>10:00:</strong> 🛍️ <a href="https://www.google.com/maps/search/?api=1&query=The+Grove+Los+Angeles" target="_blank">ザ・グローブ</a>に到着 <span class="text-sm text-gray-500">(Uber目安: 30-45分)</span></li>
-                     <li><strong>14:00:</strong> 🏨 ホテルへ戻る <span class="text-sm text-gray-500">(Uber目安: 30-45分)</span></li>
-                     <li><strong>15:00:</strong> 🏟️ <a href="https://www.google.com/maps/search/?api=1&query=Dodger+Stadium" target="_blank">ドジャースタジアム</a>へ移動・到着 <span class="text-sm text-gray-500">(Uber目安: 20-30分)</span></li>
-                     <li><strong>17:40:</strong> ⚾️ 試合開始</li>
-                     <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
-                </ul>
-            </div>
-
-            <!-- 3日目 -->
-            <div id="day3" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【3日目】8月28日 (木) | サンタモニカ散策</h3>
-                <ul class="space-y-3 border-l-2 border-blue-300 pl-4 mb-8">
-                    <li><strong>10:30:</strong> 🏖️ <a href="https://www.google.com/maps/search/?api=1&query=Santa+Monica+Pier" target="_blank">サンタモニカピア</a>に到着 <span class="text-sm text-gray-500">(Uber目安: 45-60分)</span></li>
-                    <li><strong>終日:</strong> ☀️ 自由時間 <span class="text-sm text-gray-500">(周辺のベニスビーチもおすすめです)</span></li>
-                    <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
-                </ul>
-            </div>
-
-            <!-- 4日目 -->
-            <div id="day4" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【4日目】8月29日 (金) | いざ、ディズニーランドへ！</h3>
-                <ul class="space-y-3 border-l-2 border-purple-300 pl-4 mb-8">
-                    <li><strong>8:00:</strong> 🏨 シェラトンをチェックアウトしアナハイムへ移動 <span class="text-sm text-gray-500">(Uber目安: 60-90分以上)</span></li>
-                    <li><strong>10:00:</strong> 🏰 <a href="https://www.google.com/maps/search/?api=1&query=Disneyland+Resort,Anaheim,CA" target="_blank">ディズニーランド・リゾート</a>到着</li>
-                    <li><strong>18:00:</strong> 🏨 <a href="https://www.google.com/maps/search/?api=1&query=Disneyland+Hotel,Anaheim,CA" target="_blank">ディズニーランド・ホテル</a> チェックイン</li>
-                </ul>
-            </div>
-
-            <!-- 5日目 -->
-            <div id="day5" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【5日目】8月30日 (土) | 魔法の国で一日中</h3>
-                <ul class="space-y-3 border-l-2 border-purple-300 pl-4 mb-8">
-                    <li><strong>9:00:</strong> 🏰 終日ディズニーパークを満喫！</li>
-                    <li><strong>22:00:</strong> 🏨 ホテルへ戻る</li>
-                </ul>
-            </div>
-
-            <!-- 6-7日目 -->
-            <div id="day6" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-4 text-gray-800">【6-7日目】8月31日(日) - 9月1日(月) | 出国・帰国</h3>
-                <ul class="space-y-3 border-l-2 border-gray-400 pl-4">
-                    <li><strong>10:00 (8/31):</strong> 🏨 ディズニーランド・ホテルをチェックアウト</li>
-                    <li><strong>~11:30 (8/31):</strong> 🚕 <a href="https://www.google.com/maps/search/?api=1&query=Los+Angeles+International+Airport" target="_blank">LAX</a> へ移動 <span class="text-sm text-gray-500">(Uber目安: 50-70分)</span></li>
-                    <li><strong>15:00 (8/31):</strong> 🛫 LAXから出発</li>
-                    <li><strong>18:45 (9/1):</strong> 🛬 <a href="https://www.google.com/maps/search/?api=1&query=Kansai+International+Airport" target="_blank">関西国際空港 (KIX)</a> 到着</li>
-                </ul>
-            </div>
-
-            <!-- 食事ガイド -->
-            <div id="restaurants" class="tab-panel">
-                 <h3 class="text-2xl font-bold mb-4 text-gray-800">🍴 ホテル周辺のおすすめ食事場所ガイド</h3>
-                 <p class="text-md text-gray-600 mb-8">予算$40以下で楽しめる人気店をピックアップしました。</p>
-                
-                <!-- シェラトン・グランド・ロサンゼルス周辺 -->
-                <section class="mb-12">
-                    <h4 class="text-xl font-semibold mb-6 border-b-2 border-gray-200 pb-2">🏨 シェラトン・グランド・ロサンゼルス周辺 (ダウンタウンLA)</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Market,Los+Angeles" target="_blank">Grand Central Market</a></h5><p class="text-sm text-gray-600 mt-1">LAで最も有名なフードホール。タコス、ラーメン、エッグサンドなど、世界中の人気店が集結しています。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Daikokuya+Little+Tokyo" target="_blank">大黒家 (Daikokuya)</a></h5><p class="text-sm text-gray-600 mt-1">リトルトーキョーにある大人気のラーメン店。濃厚な豚骨スープとチャーシューが絶品です。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Philippe+The+Original,Los+Angeles" target="_blank">Philippe The Original</a></h5><p class="text-sm text-gray-600 mt-1">フレンチディップサンドイッチ発祥の店として知られる1908年創業の老舗。歴史を感じる店内で楽しめます。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Maccheroni+Republic,Downtown+Los+Angeles" target="_blank">Maccheroni Republic</a></h5><p class="text-sm text-gray-600 mt-1">手頃な価格で本格的な手打ちパスタが味わえる隠れ家的な人気イタリアンレストラン。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Wurstküche,Arts+District" target="_blank">Wurstküche</a></h5><p class="text-sm text-gray-600 mt-1">アートディストリクトにあるおしゃれなビアホール。ワニやウサギなど珍しいソーセージとベルギービールが楽しめます。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Howlin'+Ray's,Chinatown+Los+Angeles" target="_blank">Howlin' Ray's</a></h5><p class="text-sm text-gray-600 mt-1">常に行列が絶えないナッシュビルホットチキンの超人気店。辛さが選べ、ジューシーなチキンは格別です。</p></div>
+            <!-- スケジュール項目 2: うどん一福 -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-green-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v6m3-6v6m3-6v6m-9 6h15a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">10:50 - 11:50 <span class="text-xs text-blue-500">(移動: 約2時間50分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">香川県うどん一福</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">本場の讃岐うどんで腹ごしらえ。1時間ほど食事を楽しみます。</p>
+                    <div class="text-xs mt-2 space-x-2">
+                        <a href="https://tabelog.com/kagawa/A3701/A370101/37001209/" target="_blank" class="text-blue-600 hover:underline">食べログ</a>
+                        <a href="https://www.google.com/maps?q=香川県高松市国分寺町新居169-1" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
                     </div>
-                </section>
-
-                <!-- ディズニーランド・ホテル周辺 -->
-                <section>
-                    <h4 class="text-xl font-semibold mb-6 border-b-2 border-gray-200 pb-2">🏰 ディズニーランド・ホテル周辺 (アナハイム)</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Anaheim+Packing+House" target="_blank">Anaheim Packing House</a></h5><p class="text-sm text-gray-600 mt-1">元オレンジ工場を改装したおしゃれなフードホール。世界各国のユニークな飲食店が集まっています。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Earl+of+Sandwich,Downtown+Disney" target="_blank">Earl of Sandwich</a></h5><p class="text-sm text-gray-600 mt-1">ダウンタウンディズニー内にある人気のサンドイッチ専門店。手頃な価格でボリューム満点です。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=The+Pizza+Press,Anaheim" target="_blank">The Pizza Press</a></h5><p class="text-sm text-gray-600 mt-1">自分で好きな具材を選んで作るカスタムピザが人気のお店。ビールも楽しめます。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Roscoe's+House+of+Chicken+and+Waffles,Anaheim" target="_blank">Roscoe's Chicken & Waffles</a></h5><p class="text-sm text-gray-600 mt-1">フライドチキンとワッフルという意外な組み合わせが癖になる、LA名物のソウルフード店。</p></div>
-                        <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Naples+Ristorante+e+Bar,Downtown+Disney" target="_blank">Naples Ristorante e Bar</a></h5><p class="text-sm text-gray-600 mt-1">ダウンタウンディズニーにある本格的なナポリピッツァが楽しめるイタリアン。テラス席もおすすめです。</p></div>
-                         <div class="border p-4 rounded-lg shadow-sm"><h5 class="font-bold text-lg"><a href="https://www.google.com/maps/search/?api=1&query=Ballast+Point,Downtown+Disney" target="_blank">Ballast Point</a></h5><p class="text-sm text-gray-600 mt-1">サンディエゴ発の人気クラフトビール醸造所。種類豊富なビールと美味しい料理が楽しめます。</p></div>
-                    </div>
-                </section>
+                </div>
             </div>
+
+            <!-- スケジュール項目 3: しろとり動物園 -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-yellow-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">12:32 - 15:02 <span class="text-xs text-blue-500">(移動: 約42分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">しろとり動物園</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">動物たちとのふれあいを満喫。2時間30分ほど見学します。</p>
+                    <div class="text-xs mt-2 space-x-2">
+                        <a href="https://www.shirotorizoo.com/" target="_blank" class="text-blue-600 hover:underline">公式サイト</a>
+                        <a href="https://www.google.com/maps?q=香川県東かがわ市松原2111" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スケジュール項目 4: TOITOITOI -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-pink-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">15:13 - 15:43 <span class="text-xs text-blue-500">(移動: 約11分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">TOITOITOI</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">おしゃれなカフェで一休み。30分ほど軽食やデザートを楽しみます。</p>
+                     <div class="text-xs mt-2 space-x-2">
+                        <a href="https://www.instagram.com/toitoitoi_gelato/" target="_blank" class="text-blue-600 hover:underline">Instagram</a>
+                        <a href="https://www.google.com/maps?q=香川県高松市常磐町1丁目9-3" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- スケジュール項目 5: 道の駅 源平の里 -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-teal-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">16:03 - 16:33 <span class="text-xs text-blue-500">(移動: 約20分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">道の駅 源平の里 むれ</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">旅の締めくくりにお土産探し。30分ほど立ち寄ります。</p>
+                    <div class="text-xs mt-2 space-x-2">
+                        <a href="https://genpei-mure.com/" target="_blank" class="text-blue-600 hover:underline">公式サイト</a>
+                        <a href="https://www.google.com/maps?q=香川県高松市牟礼町原631-7" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スケジュール項目 6: 道の駅くるくるなると -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">17:13 - 17:58 <span class="text-xs text-blue-500">(移動: 約40分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">道の駅くるくるなると</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">鳴門の特産品をチェック！45分ほど滞在します。</p>
+                     <div class="text-xs mt-2 space-x-2">
+                        <a href="https://kurukurunaruto.com/" target="_blank" class="text-blue-600 hover:underline">公式サイト</a>
+                        <a href="https://www.google.com/maps?q=徳島県鳴門市大津町備前島海道2-2" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スケジュール項目 7: 枚方花火大会 -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-red-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-6 h-6 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 01.207 1.414l-6.293 6.293a1 1 0 01-1.414-1.414l6.293-6.293a1 1 0 011.207-.207zM18 5l-2.293 2.293a1 1 0 01-1.414 0l-6.293-6.293a1 1 0 010-1.414l2.293-2.293a1 1 0 011.414 0l6.293 6.293a1 1 0 010 1.414z"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">19:48頃 <span class="text-xs text-blue-500">(移動: 約1時間50分)</span></p>
+                    <h3 class="font-bold text-gray-800 text-xl">枚方花火大会（車窓見学）</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">帰り道に花火大会の会場周辺を通過。車の中から夏の風物詩を楽しみます。</p>
+                     <div class="text-xs mt-2 space-x-2">
+                        <a href="https://www.google.com/maps/q/淀川河川公園枚方地区" target="_blank" class="text-blue-600 hover:underline">Google Map</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スケジュール項目 8: 帰宅 -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-indigo-500 shadow-xl w-12 h-12 rounded-full">
+                    <svg class="w-7 h-7 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-gray-500 text-sm">20:28頃</p>
+                    <h3 class="font-bold text-gray-800 text-xl">帰宅</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-600">花火大会の余韻に浸りながら、安全運転で帰宅します。<span class="text-xs text-blue-500">(移動: 約40分)</span></p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <script>
-        const tabNav = document.getElementById('tab-nav');
-        const tabContent = document.getElementById('tab-content');
-        const tabButtons = tabNav.querySelectorAll('.tab-button');
-        const tabPanels = tabContent.querySelectorAll('.tab-panel');
-
-        tabNav.addEventListener('click', (e) => {
-            if (e.target.classList.contains('tab-button')) {
-                // Deactivate all tabs
-                tabButtons.forEach(button => button.classList.remove('active'));
-                tabPanels.forEach(panel => panel.classList.remove('active'));
-
-                // Activate clicked tab
-                e.target.classList.add('active');
-                const targetPanelId = e.target.dataset.target;
-                document.getElementById(targetPanelId).classList.add('active');
-            }
-        });
-    </script>
-
 </body>
 </html>
+
