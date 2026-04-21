@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高知駅周辺 おすすめグルメガイド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen pb-12">
+
+    <!-- Header -->
+    <header class="bg-orange-500 text-white shadow-md">
+        <div class="max-w-2xl mx-auto px-4 py-6 text-center relative">
+            <a href="index.html" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-orange-100 hover:text-white flex items-center text-sm font-medium">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                しおりへ戻る
+            </a>
+            <h1 class="text-2xl font-bold tracking-wider">おすすめグルメガイド</h1>
+            <p class="text-orange-100 text-sm mt-1">高知駅〜はりまや橋・帯屋町周辺</p>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 mt-8 space-y-8">
+
+        <!-- Category 1 -->
+        <section>
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b-2 border-orange-200 pb-2">
+                <span class="text-2xl mr-2">🐟</span> 絶品！カツオのタタキ・郷土料理
+            </h2>
+            <div class="space-y-4">
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">明神丸（みょうじんまる） 本店</h3>
+                    <p class="text-gray-600 text-sm mb-3">高知でカツオのタタキといえばここ！目の前で藁焼きにしてくれる分厚いタタキ（塩・タレ）は絶品です。人気店なので早めの時間がおすすめ。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=明神丸+本店" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">土佐料理 司（つかさ） 高知本店</h3>
+                    <p class="text-gray-600 text-sm mb-3">落ち着いた雰囲気で、カツオのタタキやクジラ料理、どろめなど、高知の郷土料理を総合的に楽しめる老舗の有名店です。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=土佐料理+司+高知本店" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 2 -->
+        <section>
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b-2 border-orange-200 pb-2">
+                <span class="text-2xl mr-2">🍻</span> 地元の活気！定番居酒屋
+            </h2>
+            <div class="space-y-4">
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">葉牡丹（はぼたん）</h3>
+                    <p class="text-gray-600 text-sm mb-3">昼から飲める高知の超定番・大衆酒場！串焼き（焼き鳥・豚串）やホルモンが安くて美味しく、常に地元の人で賑わう活気あるお店です。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=居酒屋+葉牡丹" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">どんこ</h3>
+                    <p class="text-gray-600 text-sm mb-3">古民家風の隠れ家的な居酒屋。新鮮な魚介類や、高知ならではの食材を使った手作り料理が美味しいと評判の名店です。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=どんこ+高知" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 3 -->
+        <section>
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b-2 border-orange-200 pb-2">
+                <span class="text-2xl mr-2">🥟</span> 競馬後の夜遅くに！名物・屋台餃子
+            </h2>
+            <div class="space-y-4">
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">屋台安兵衛（やたいやすべえ）</h3>
+                    <p class="text-gray-600 text-sm mb-3">高知の夜の〆といえばここ！薄皮でパリッと揚げ焼きにされた小ぶりの餃子は、お酒のお供に最高です。深夜まで営業（日曜定休）。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=屋台安兵衛" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+                <!-- Shop -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h3 class="text-lg font-bold text-orange-600 mb-1">松ちゃん（まっちゃん）</h3>
+                    <p class="text-gray-600 text-sm mb-3">安兵衛と並ぶ人気の屋台。こちらもサクサクの焼き餃子が名物で、ラーメンも人気があります。夜遅くから営業開始。</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=屋台+松ちゃん+高知" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-500 hover:text-blue-700 bg-blue-50 px-2 py-1 rounded">
+                        📍 Google Mapで見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-8">
+            <a href="index.html" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 px-8 rounded-full transition-colors">
+                しおり本体へ戻る
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
